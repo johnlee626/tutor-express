@@ -15,6 +15,14 @@ app.get('/about', function (req, res) {
   res.render('about', {title: 'about page'})
 })
 
+app.get('/signup', function (req, res) {
+  res.render('signup', {title: 'signup page'})
+})
+
+app.get('/login', function (req, res) {
+  res.render('login', {title: 'login page'})
+})
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found')
