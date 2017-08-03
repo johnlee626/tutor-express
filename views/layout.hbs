@@ -33,7 +33,7 @@
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header" style="padding-top:5px;">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -45,28 +45,63 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    <li style="padding-top:5px;">
                         <a href="/about">About</a>
                     </li>
-                    <li>
+                    <li style="padding-top:5px;">
                         <a href="/services">Services</a>
                     </li>
-                    <li>
+                    <li style="padding-top:5px;">
                         <a href="/contact">Contact</a>
+                    </li>
+					<li style="padding-top:5px;">
+                        <a href="javascript:void(0)">Sign up</a>
+                    </li>
+					<li>
+                        <a href="javascript:void(0)"><button type="button" class="btn btn-primary">Login</button></a>							
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
+    </nav>	
 	
     {{{body}}}
+	
+	<!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Your Company 2017. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 	
 	<!-- jQuery -->
     <script src="/js/jquery-3.2.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
+	
   </body>
 </html>
