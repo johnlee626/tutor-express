@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+const bodyParser = require('body-parser')
 const hbs = require('express-handlebars')
 const app = express()
 
@@ -9,7 +10,8 @@ app.set('views', path.join(__dirname, 'views'))
 app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views', partialsDir: __dirname + '/views/partials'}))
 app.set('view engine', 'hbs')
 
-
+app.use(bodyParser.json({ limit: '20mb' }))
+app.use(bodyParser.urlencoded({ limit: '20mb', extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', function (req, res) {
