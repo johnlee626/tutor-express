@@ -6,16 +6,17 @@ module.exports = {
     },
     module: {
         loaders: [
-			{
-			  test: /\.jsx*$/,
-			  exclude: [/node_modules/, /.+\.config.js/],
-			  loader: 'babel',
-		    }, 
-			{
-			  test: /\.json$/,
-			  loader: 'json-loader',
-		    },
-            { test: /\.css$/, loader: "style!css" }
-        ]
+		  {
+			test: /\.json$/,
+			loader: 'json-loader'
+		  },
+		  {
+			test: /\.js$/,
+			loader: 'babel-loader'
+		  },
+		  {
+            test: /\.css$/, loader: "style-loader!css-loader"
+          }
+		]
     }
 };
