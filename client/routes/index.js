@@ -1,23 +1,21 @@
 import React from 'react'
 import {Route, IndexRoute} from 'react-router'
+import Template from '../components/Template'
+import Dashboard from '../components/Dashboard'
+import Student from '../components/Student'
 
 const createRoutes = () => {
   return (
     <Route
-      path='/'
-      component={Template}
-      auth={auth}
-      queries={ViewerQueries}
+      path='/dashboard'
+      component={Template}      
     >
       <IndexRoute
-        component={Home}
-        queries={ViewerQueries}
+        component={Dashboard}        
       />
       <Route
-        path='/profile'
-        component={Profile}
-        queries={ViewerQueries}
-        onEnter={userOnly}
+        path='/students'
+        component={Student}        
       />
     </Route>
   )

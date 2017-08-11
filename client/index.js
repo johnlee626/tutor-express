@@ -1,9 +1,12 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { Router, browserHistory } from 'react-router'
-import App from './components/App'
+import Routes from './routes'
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('page-wrapper')
+  <Router
+    history={browserHistory}
+    routes={Routes}
+  />,
+  document.getElementById('wrapper')
 )

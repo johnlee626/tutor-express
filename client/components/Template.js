@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router'
 
 var inStyle = {
 	marginBottom: '0'
@@ -21,10 +20,10 @@ var divStyle4 = {
 	width: '80%'
 }
 
-class Navigation extends Component {
+class Template extends Component {
 	render() {
 		return (			
-				
+			<div>	
 				<nav className="navbar navbar-default navbar-static-top" role="navigation" style={inStyle}>
 					<div className="navbar-header">
 						<button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -260,7 +259,7 @@ class Navigation extends Component {
 									
 								</li>
 								<li>
-									<a href="index.html"><i className="fa fa-dashboard fa-fw"></i> Dashboard</a>
+									<a href="/dashboard"><i className="fa fa-dashboard fa-fw"></i> Dashboard</a>
 								</li>
 								<li>
 									<a href="/students"><i className="fa fa-user fa-fw"></i> Students<span className="fa arrow"></span></a>                            
@@ -355,9 +354,14 @@ class Navigation extends Component {
 					</div>
 					
 				</nav>
+				
+				<div id="page-wrapper">
+					{this.props.children}					
+				</div>
+			</div>
 			
 		)
 	}
 }
 
-export default Navigation
+export default Template
