@@ -16,7 +16,8 @@
     "hbs": "^4.0.1",
     "mongodb": "^2.2.31",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-router": "^4.1.2"
   },
   "devDependencies": {
     "babel": "^6.23.0",

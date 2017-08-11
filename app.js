@@ -22,6 +22,14 @@ app.get('/about', function (req, res) {
   res.render('about', {title: 'about page'})
 })
 
+app.get('/features', function (req, res) {
+  res.render('features', {title: 'features page'})
+})
+
+app.get('/contact', function (req, res) {
+  res.render('contact', {title: 'contact page'})
+})
+
 app.get('/signup', function (req, res) {
   res.render('signup', {title: 'signup page'})
 })
